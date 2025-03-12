@@ -26,6 +26,8 @@ facts[17] = "Corbin advises the Great Wall of China is 13,000 miles long";
 facts[18] = "hnguyen1995 hates jS";
 facts[19] = "llemoine1230 loves Romans 5:8";
 facts[20] = "ehb2004 loves to run";
+facts[21] = "Jinxler says 🦭🦭";
+    
 
 
 document.getElementById("demo").innerHTML = facts.toString();
