@@ -1,0 +1,38 @@
+body {
+  margin: 1;
+  padding: 1;
+  background-color: grey;
+}
+
+#intro {
+  text-align: center;
+  font-size: 23px;
+  color: white;
+  z-index: 2;
+
+}
+
+#id {
+  text-align: left;
+  font-size: 15px;
+}
+
+#shellySeal {
+  font-size: 450px;
+  margin: 0px; 
+  padding:  0px;
+  position: absolute;
+  transform: translate(210%,2750%);
+  z-index: 0;
+}
+
+#textBubble {
+  position: relative;
+  height: 200px;
+  width: 300px;
+  background-color: rgb(182, 230, 230);
+  right: -950px;
+  bottom: 100px;
+  text-align: center;
+  
+}
