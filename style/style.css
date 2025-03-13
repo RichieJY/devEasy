@@ -1,0 +1,17 @@
+body {
+  margin: 1;
+  padding: 1;
+  background-color: gray;
+}
+
+#intro {
+  text-align: center;
+  font-size: 23px;
+  color: white;
+
+}
+
+#id {
+  text-align: left;
+  font-size: 15px;
+}
