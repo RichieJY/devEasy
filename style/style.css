@@ -1,0 +1,61 @@
+body {
+  background-image: url("../beach.png");
+  background-size: cover;  /* Scales the image to cover the entire page */
+  /* background-position: center;  /* Centers the image */
+  background-repeat: no-repeat;  /* Prevents tiling */
+  height: 100vh;  /*Ensures the body takes up the full viewport height */
+  margin: 0px;  /* Removes default margin */
+}
+
+
+
+
+#intro {
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  margin-top: 1%;
+  z-index: 2;
+  color: white
+}
+
+#id {
+  text-align: left;
+  font-size: 15px;
+}
+
+#shellySeal {
+  font-size: 20vw; /* This keeps the seal proportional to the screen width */
+  position: fixed;
+  right: 0;
+  top: 70%;  /* Adjust the top position to move it upwards */
+  z-index: 0;
+}
+
+
+#textBubble {
+  position: fixed;
+  bottom: 50%;
+  left: 57%;
+  height: auto;
+  width: 80%;
+  max-width: 300px; 
+  background-color: rgb(73, 4, 235);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#like-btn {
+  position: absolute; /* Positioned relative to the nearest positioned ancestor */
+  bottom: 300px; /* 10px from the bottom */
+  right: 485px; /* 10px from the left */
+  z-index: 1000;
+}
+
+#reset-btn {
+  position: absolute; /* Positioned relative to the nearest positioned ancestor */
+  bottom: 265px; /* 10px from the bottom */
+  right: 468px; /* 10px from the left */
+  z-index: 1000;
+}
