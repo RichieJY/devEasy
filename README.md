@@ -1,1 +1,1 @@
-3/14 @ 1:32PM...CURRENTLY WORKING ON, WILL UPLOAD AND CHANGE README WHEN DONE ---
+Worked for about 3 hours. Got background up and some jQ and jS stuff. still need to make the liked section and prob the buttons more pretty
