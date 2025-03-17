@@ -7,9 +7,6 @@ body {
   margin: 0px; 
 }
 
-
-
-
 #intro {
   text-align: center;
   font-size: 30px;
@@ -37,31 +34,54 @@ body {
   z-index: 0;
 }
 
-
+/* https://css-generators.com/tooltip-speech-bubble/ */
 #textBubble {
-  position: fixed;
-  bottom: 50%;
-  left: 57%;
-  height: auto;
-  width: 80%;
-  max-width: 300px; 
-  background-color: rgb(73, 4, 235);
-  color: white;
+  color: #fff;
+  font-size: 18px;
+  max-width: 28ch;
   text-align: center;
-  padding: 10px;
+}
+#textBubble {
+  --s: 1.5em; /* triangle size */
+  --r: 1em; /* the radius */
+
+  padding: 1em;
+  border: var(--s) solid #0000;
+  border-radius: calc(var(--r) + var(--s));
+  border-bottom-right-radius: 0;
+  background: border-box linear-gradient(60deg,#0a8965,#8ddea5); /* the coloration */
+  -webkit-mask:
+    radial-gradient(100% 100% at 0 100%,#0000 99%,#000 102%) 
+      calc(100% - var(--s)) 100%/var(--s) var(--s) no-repeat border-box,
+    linear-gradient(#000 0 0) padding-box;
+
+  position: absolute;
+  left: 55%;
+  bottom: 40%;
+  
 }
 
+/* https://verpex.com/blog/website-tips/css-shapes-the-heart */
 #like-btn {
-  position: absolute; 
+  --c: rgb(147, 13, 13);
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1;
+  background:
+  /* 1 */ radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
+  /* 2 */ radial-gradient(circle at 40% 65%,var(--c) 64%,#0000 65%) top right/50% 50%,
+  /* 3 */ conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
   bottom: 300px; /* px FROM the bottom*/
-  right: 485px; /* px FROM the left */
+  right: 550px; /* px FROM the left */
   z-index: 1000;
 }
 
 #reset-btn {
   position: absolute; 
-  bottom: 265px; 
-  right: 468px; 
+  bottom: 303px; 
+  right: 430px; 
   z-index: 1000;
 }
 
@@ -71,4 +91,26 @@ body {
   width: 440px;
   top: 10px;
   left: 515px;
+}
+
+#liked-facts {
+  position: absolute;
+  top: 210px;
+  left: 160px; 
+  width: 400px;
+  z-index: 1000;
+  background-color: #085566;
+  padding: 15px;
+  border: 2px solid #3fa8c3;
+  border-radius: 15px 50px;
+  color: white;
+}
+
+#like-amount{
+  position: absolute;
+  top: 227.5px;
+  left: 263px;
+  z-index: 1001;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }

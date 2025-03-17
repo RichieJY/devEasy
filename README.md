@@ -4,3 +4,4 @@ TODO: -make 'liked' section better
 
 
 Removed names for "confidential" facts
+Made a prettier looking speech bubble for the student facts
