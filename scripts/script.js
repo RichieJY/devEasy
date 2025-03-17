@@ -39,7 +39,7 @@ $(document).ready(function () {
     function showFact() {
         $("#textBubble")
           .fadeIn(500)  //fade in timer
-          .delay(4000)  // 4-second timer for the fact, x000 with x being the seconds
+          .delay(3000)  // 4-second timer for the fact, x000 with x being the seconds
           .fadeOut(500, function () {  //current fades ou t
               index = (index + 1) % facts.length; //looping thru the facts
               $(this).text("Shelly found out that " + facts[index] + "!");  
