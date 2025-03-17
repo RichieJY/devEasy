@@ -1,4 +1,6 @@
-Worked for about 3 hours. Got background up and some jQ and jS stuff. still need to make the liked section and prob the buttons more pretty
+TODO: -make 'liked' section better
+      -flippedable? (maybe make Shelly able to be flipped?)
+      -try to play with like button
 
 
 Removed names for "confidential" facts
