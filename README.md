@@ -1,1 +1,1 @@
-test phase, i think its done? Im on an ultrawide tho so idk how it "really" looks
+Authors: Erika B. and Richie Y // DevEasy for CIS-376 (Group 1)
