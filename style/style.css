@@ -27,12 +27,18 @@ body {
 }
 
 #shellySeal {
-  font-size: 20vw;  /* This keeps the seal proportional to the screen width...figured that the hard way */
+  font-size: 20vw;  
   position: fixed;
   right: 0;
   top: 70%;  
   z-index: 0;
+  transition: transform 0.3s ease;  /* Smooth flip animation */
 }
+
+.flipped {
+  transform: scaleX(-1);  /* Flip horizontally */
+}
+
 
 /* https://css-generators.com/tooltip-speech-bubble/ */
 #textBubble {
@@ -113,4 +119,18 @@ body {
   z-index: 1001;
   color: rgb(255, 255, 255);
   font-weight: bold;
+}
+
+#sort-asc-btn, #sort-desc-btn {
+  position: absolute;
+  bottom: 260px;  
+  z-index: 1000;
+}
+
+#sort-asc-btn {
+  right: 550px;
+}
+
+#sort-desc-btn {
+  right: 470px;
 }
